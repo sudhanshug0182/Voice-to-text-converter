@@ -1,0 +1,92 @@
+*,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    background: linear-gradient(270deg, #d13cff,#031f6a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.voice_to_text{
+    width: 80%;
+    max-width: 600px;
+    min-width: 450px;
+    min-height: 400px;
+    text-align: center;
+}
+
+.myArea{
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 28px;
+    margin-bottom: 10px;
+}
+
+.myArea textarea {
+    box-sizing: border-box;
+    background-color: #fff;
+    height: 200px;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;  
+}
+
+.myArea button {
+    position: absolute;
+    padding: 0px 10px;
+    font-size: 15px;
+    color: #5784f5;
+    right: 10px;
+    top: 10px;
+    border: 1px solid #5784f5;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.myArea button:active {
+    background-color: #1453f1c1;
+    color: #fff;
+}
+
+.myArea button::before {
+    content: "copied";
+    font-size: 15px;
+    display: none;
+}
+
+.myArea.active button::before {
+    display: block;
+}
+
+h1{
+    font-size: 2rem;
+    color: #fff;
+}
+
+button{
+    padding: 12px 20px;
+    background: #08b7f7;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+}
