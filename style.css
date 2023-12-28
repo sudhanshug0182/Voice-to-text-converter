@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif, Arial, Helvetica;
     font-size: 1rem;
     margin: 0;
     padding: 0;
@@ -16,14 +16,51 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     min-height: 100vh;
+    min-width: 365px;
+}
+
+.navigation{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    height:39.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation a{
+    text-decoration: none;
+    padding: 11px;
+    border-radius: 20px;
+    color: black;
+}
+
+.navigation a:hover{
+    background-color: #7414f17b;
+    color: #fff;
+}
+
+#active-link{
+    background-color: #1453f17d;
+    color: #fff;
+}
+
+#heading{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+#heading span{
+    color: #ff2963;
 }
 
 .voice_to_text{
-    width: 80%;
+    width: 95%;
     max-width: 600px;
-    min-width: 450px;
-    min-height: 400px;
     text-align: center;
 }
 
@@ -34,12 +71,13 @@ body{
     border-radius: 10px;
     padding: 28px;
     margin-bottom: 10px;
+    box-sizing: border-box;
+    max-width: 600px;
 }
 
 .myArea textarea {
-    box-sizing: border-box;
     background-color: #fff;
-    height: 200px;
+    height: 250px;
     resize: none;
     border: none;
     outline: none;
@@ -49,7 +87,7 @@ body{
 
 .myArea button {
     position: absolute;
-    padding: 0px 10px;
+    padding: 1px 10px;
     font-size: 15px;
     color: #5784f5;
     right: 10px;
@@ -66,7 +104,7 @@ body{
 }
 
 .myArea button::before {
-    content: "copied";
+    content: "Copied";
     font-size: 15px;
     display: none;
 }
@@ -80,7 +118,7 @@ h1{
     color: #fff;
 }
 
-button{
+#startBtn{
     padding: 12px 20px;
     background: #08b7f7;
     border: 0;
@@ -88,5 +126,18 @@ button{
     border-radius: 5px;
     cursor: pointer;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+footer{
+    position: relative;
+    bottom: -120px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
